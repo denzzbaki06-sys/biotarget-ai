@@ -1,0 +1,529 @@
+.ab-panel {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 30px;
+
+    border:
+            1px solid rgba(103, 232, 249, 0.13);
+    border-radius: 20px;
+
+    background:
+            radial-gradient(
+                    circle at 100% 0,
+                    rgba(139, 92, 246, 0.1),
+                    transparent 35%
+            ),
+            radial-gradient(
+                    circle at 0 100%,
+                    rgba(34, 211, 238, 0.06),
+                    transparent 35%
+            ),
+            linear-gradient(
+                    145deg,
+                    rgba(7, 27, 53, 0.96),
+                    rgba(3, 15, 31, 0.98)
+            );
+
+    box-shadow:
+            0 24px 65px rgba(0, 0, 0, 0.22);
+}
+
+.ab-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 24px;
+}
+
+.ab-kicker {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #67e8f9;
+
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+}
+
+.ab-header h3 {
+    margin: 0;
+
+    color: #effcff;
+
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+}
+
+.ab-header p {
+    max-width: 760px;
+
+    margin: 9px 0 0;
+
+    color: #91adbd;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.ab-count {
+    display: flex;
+    flex-direction: column;
+
+    flex: 0 0 auto;
+
+    min-width: 100px;
+
+    padding: 12px 15px;
+
+    text-align: right;
+
+    border:
+            1px solid rgba(34, 211, 238, 0.13);
+    border-radius: 12px;
+
+    background:
+            rgba(34, 211, 238, 0.04);
+}
+
+.ab-count strong {
+    color: #e4fbff;
+
+    font-size: 25px;
+    line-height: 1;
+}
+
+.ab-count span {
+    margin-top: 4px;
+
+    color: #7190a3;
+
+    font-size: 9px;
+}
+
+.ab-selector-grid {
+    display: grid;
+
+    grid-template-columns:
+    minmax(0, 1fr)
+    60px
+    minmax(0, 1fr);
+
+    gap: 15px;
+
+    align-items: stretch;
+}
+
+.ab-selector-card {
+    min-width: 0;
+
+    padding: 20px;
+
+    border:
+            1px solid rgba(103, 232, 249, 0.11);
+    border-radius: 15px;
+
+    background:
+            linear-gradient(
+                    145deg,
+                    rgba(9, 36, 67, 0.76),
+                    rgba(4, 20, 40, 0.84)
+            );
+}
+
+.ab-selector-label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #67e8f9;
+
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+.ab-selector-card select {
+    width: 100%;
+    height: 46px;
+
+    padding: 0 13px;
+
+    color: #e8faff;
+
+    border:
+            1px solid rgba(103, 232, 249, 0.15);
+    border-radius: 10px;
+
+    outline: none;
+
+    background:
+            rgba(2, 14, 30, 0.92);
+
+    font-size: 13px;
+}
+
+.ab-selector-card select:focus {
+    border-color:
+            rgba(34, 211, 238, 0.48);
+
+    box-shadow:
+            0 0 0 3px rgba(34, 211, 238, 0.07);
+}
+
+.ab-vs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: center;
+
+    width: 48px;
+    height: 48px;
+
+    justify-self: center;
+
+    color: #67e8f9;
+
+    border:
+            1px solid rgba(34, 211, 238, 0.18);
+    border-radius: 50%;
+
+    background:
+            rgba(34, 211, 238, 0.05);
+
+    font-size: 10px;
+    font-weight: 900;
+
+    box-shadow:
+            0 0 25px rgba(34, 211, 238, 0.08);
+}
+
+.ab-preview {
+    margin-top: 17px;
+}
+
+.ab-target {
+    padding-bottom: 14px;
+
+    border-bottom:
+            1px solid rgba(103, 232, 249, 0.07);
+}
+
+.ab-target span,
+.ab-parameter-grid span,
+.ab-metric-grid span {
+    display: block;
+
+    color: #6f8ea1;
+
+    font-size: 9px;
+}
+
+.ab-target strong {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #dffaff;
+
+    font-size: 13px;
+}
+
+.ab-parameter-grid,
+.ab-metric-grid {
+    display: grid;
+
+    grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+.ab-parameter-grid > div,
+.ab-metric-grid > div {
+    padding: 11px;
+
+    border:
+            1px solid rgba(103, 232, 249, 0.07);
+    border-radius: 9px;
+
+    background:
+            rgba(2, 14, 30, 0.44);
+}
+
+.ab-parameter-grid strong,
+.ab-metric-grid strong {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #e5faff;
+
+    font-size: 13px;
+}
+
+.ab-metric-grid strong {
+    color: #8eeaf4;
+}
+
+.ab-select-hint {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 13px;
+    padding: 12px 14px;
+
+    color: #7897a9;
+
+    border:
+            1px solid rgba(103, 232, 249, 0.07);
+    border-radius: 10px;
+
+    background:
+            rgba(3, 15, 31, 0.55);
+
+    font-size: 11px;
+}
+
+.ab-select-hint span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 23px;
+    height: 23px;
+
+    color: #67e8f9;
+
+    border:
+            1px solid rgba(34, 211, 238, 0.12);
+    border-radius: 50%;
+
+    font-weight: 900;
+}
+
+.ab-results {
+    margin-top: 17px;
+    padding-top: 20px;
+
+    border-top:
+            1px solid rgba(103, 232, 249, 0.08);
+}
+
+.ab-results-heading > span {
+    color: #a78bfa;
+
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+.ab-results-heading h4 {
+    margin: 6px 0 0;
+
+    color: #effcff;
+
+    font-size: 18px;
+}
+
+.ab-difference-grid {
+    display: grid;
+
+    grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+    gap: 9px;
+
+    margin-top: 14px;
+}
+
+.ab-difference-grid article {
+    padding: 15px;
+
+    border:
+            1px solid rgba(103, 232, 249, 0.09);
+    border-radius: 11px;
+
+    background:
+            rgba(3, 17, 35, 0.58);
+}
+
+.ab-difference-grid span {
+    display: block;
+
+    color: #718fa2;
+
+    font-size: 9px;
+}
+
+.ab-difference-grid strong {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #dffbff;
+
+    font-size: 20px;
+}
+
+.ab-difference-grid small {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #557487;
+
+    font-size: 8px;
+}
+
+.ab-note,
+.ab-empty {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-top: 15px;
+    padding: 15px;
+
+    border:
+            1px solid rgba(103, 232, 249, 0.075);
+    border-radius: 11px;
+
+    background:
+            rgba(3, 15, 31, 0.58);
+}
+
+.ab-note > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    width: 27px;
+    height: 27px;
+
+    color: #67e8f9;
+
+    border:
+            1px solid rgba(34, 211, 238, 0.13);
+    border-radius: 50%;
+
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.ab-note p {
+    margin: 0;
+
+    color: #718fa2;
+
+    font-size: 10px;
+    line-height: 1.65;
+}
+
+.ab-note strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #a9cbd5;
+
+    font-size: 11px;
+}
+
+.ab-empty {
+    align-items: center;
+
+    margin-top: 0;
+
+    padding: 24px;
+
+    border:
+            1px dashed rgba(103, 232, 249, 0.15);
+}
+
+.ab-empty-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+
+    width: 48px;
+    height: 48px;
+
+    color: #67e8f9;
+
+    border:
+            1px solid rgba(34, 211, 238, 0.13);
+    border-radius: 13px;
+
+    background:
+            rgba(34, 211, 238, 0.04);
+}
+
+.ab-empty h4 {
+    margin: 0;
+
+    color: #e7faff;
+
+    font-size: 16px;
+}
+
+.ab-empty p {
+    margin: 6px 0 0;
+
+    color: #7897a9;
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+    .ab-panel {
+        padding: 20px;
+    }
+
+    .ab-header {
+        flex-direction: column;
+    }
+
+    .ab-count {
+        text-align: left;
+    }
+
+    .ab-selector-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ab-vs {
+        margin: 2px auto;
+    }
+
+    .ab-difference-grid {
+        grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 500px) {
+    .ab-parameter-grid,
+    .ab-metric-grid,
+    .ab-difference-grid {
+        grid-template-columns: 1fr;
+    }
+}
